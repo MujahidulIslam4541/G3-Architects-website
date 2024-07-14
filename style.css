@@ -21,6 +21,9 @@
     font-size: 1rem;
     font-weight: 600;
 }
+main > section{
+    margin-top: 100px;
+}
 
 /* header style */
 
@@ -45,13 +48,13 @@
     color: rgb(66, 66, 66);
 }
 .navbar ,.banner{
-    max-width: 90vw;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 /* banner relaited style */
 .banner-content{
-    width: 70vw;
+    max-width: 700px;
     margin: 0 auto;
     text-align: center;
     padding-top: 50px;
@@ -62,7 +65,7 @@
 }
 .banner-content p{
     color: rgb(114, 114, 114);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     padding: 15px 0;
 }
@@ -76,5 +79,59 @@
 @media screen and (max-width:576px) {
     .navbar ,.nav-links{
         flex-direction: column;
+    }
+}
+
+
+/* main section start */
+main{
+    max-width: 900px;
+    margin: 0 auto
+}
+.tems{
+    align-items: center;
+}
+.team-conatainer-img img{
+    width: 100%;
+}
+.team-conatainer-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+.fetures-container{
+    margin-left: 50px;
+    width: 600px;
+}
+.fetures-container h3{
+    padding-bottom: 10px;
+}
+#Quick-list{
+    color: rgb(114, 114, 114);
+    font-weight: 400;
+}
+#of-our{
+    color: rgb(19, 19, 19);
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+#Features{
+    color: rgb(255, 144, 14);
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.fetures-container p{
+    color: rgb(114, 114, 114);
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+
+@media screen  and (max-width:576px){
+    .tems{
+        flex-direction: column;
+    }
+    .fetures-container{
+        width: 92vw;
+        margin: 10px auto;
     }
 }
