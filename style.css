@@ -202,3 +202,48 @@ main{
         gap: 20px;
     }
 }
+@media screen  and (min-width:576px) and (max-width:992px){
+    .fact-conatiner{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        gap: 20px;
+    }
+}
+
+
+
+
+/* sponsars section start */
+.sponsars-info{
+    max-width: 540px;
+    margin: 30px auto;
+    text-align: center;
+}
+.sponsar-company img{
+    width: 100px;
+    filter: grayscale(100%);
+}
+.sponsar-company{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+
+
+@media screen  and (max-width:576px){
+    .sponsar-company{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        gap: 25px;
+    }
+}
+
+
+@media screen  and (min-width:576px) and (max-width:992px){
+    .sponsar-company{
+        grid-template-columns: repeat(3,1fr);
+        justify-items: center;
+        gap: 25px;
+    }
+}
